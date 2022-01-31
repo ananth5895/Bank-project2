@@ -1,0 +1,11 @@
+.section-2{
+    background-color: rgb(255, 244, 143);
+    width: 500px;
+    margin: 40px;
+    padding: 30px;
+}
+.sumbit-btn{
+    margin-left: 159px;
+    padding: 8px 18px 8px 20px;
+    font-size: 20px;
+}

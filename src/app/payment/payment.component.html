@@ -1,0 +1,32 @@
+<!-- 
+phone or AccountNumber: <input type="number" #panum> <br> <br>
+deposit Amount : <input type="text" placeholder="-\" #depam><br> <br>
+<input type="button" value="pay" (click)="payment(panum.value, depam.value)"> -->
+
+<div class="card " >
+    <div class="card-body d-flex justify-content-center">
+        <button class="btn btn-info" [routerLink]="['','payment','check-balance']">Check Balance</button>
+    </div>
+    <div class="row">
+        <div class="">
+            <label>Phone Number</label>
+        </div>
+        <div class="">
+            <input type="number" [(ngModel)]="number">
+            <!-- {{number}} -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <label>Amount</label>
+        </div>
+        <div class="">
+            <input type="number" [(ngModel)]="amount">
+            <!-- {{amount}} -->
+        </div>
+    </div>
+    <div class="card-footer d-flex ">
+        <input type="button" class="btn btn-success" (click)="pay()" value="pay">
+    </div>
+</div>
+<router-outlet></router-outlet>
